@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeltyBites - Custom Cake Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/melt.PNG" alt="MeltyBites logo" class="brand-logo">
+      <div class="logo-text">
+        <h1>MeltyBites</h1>
+        <p>Cakes</p>
+      </div>
+    </div>
+    <div class="nav-links">
+      <div class="nav-pills" role="navigation" aria-label="Main">
+        <a href="index.html" class="nav-link nav-pill">Home</a>
+        <a href="products.html" class="nav-link nav-pill">Products</a>
+        <a href="custom-cake.html" class="nav-link nav-pill">Custom</a>
+      </div>
+      <div class="nav-icons">
+        <a href="gallery.html" class="gallery-btn active-gallery" aria-label="Gallery of past custom cakes"><span class="gallery-btn-full">Past custom cakes</span><span class="gallery-btn-short" aria-hidden="true">Gallery</span></a>
+        <a href="cart.html" class="cart-btn nav-cart-desktop" aria-label="Open cart">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="gallery-page">
+    <h1 class="section-title">Gallery of Past Custom Cakes</h1>
+    <p class="custom-intro">Showcase your best client work here. Replace sample cards with your real cake photos and names.</p>
+
+    <div class="gallery-grid">
+      <article class="gallery-card">
+        <img src="images/gallery/cake-1.jpg" alt="Custom wedding cake sample">
+        <div class="gallery-card-body">
+          <h3>Elegant Wedding Cake</h3>
+          <p>Multi-tier fondant with floral accents.</p>
+        </div>
+      </article>
+      <article class="gallery-card">
+        <img src="images/gallery/cake-2.jpg" alt="Custom birthday cake sample">
+        <div class="gallery-card-body">
+          <h3>Pink Birthday Theme</h3>
+          <p>Buttercream roses and drip decoration.</p>
+        </div>
+      </article>
+      <article class="gallery-card">
+        <img src="images/gallery/cake-3.jpg" alt="Chocolate custom cake sample">
+        <div class="gallery-card-body">
+          <h3>Chocolate Luxe Design</h3>
+          <p>Rich cocoa finish with gold details.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <a href="cart.html" class="mobile-cart-bar" aria-label="View shopping cart">
+    <span class="mobile-cart-bar__icon">🛒</span>
+    <span class="mobile-cart-bar__label">Cart</span>
+    <span class="cart-count mobile-cart-count">0</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
