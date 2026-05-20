@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeltyBites - Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/melt.PNG" alt="MeltyBites logo" class="brand-logo">
+      <div class="logo-text">
+        <h1>MeltyBites</h1>
+        <p>Cakes</p>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="custom-cake.html" class="nav-link">Custom Cakes</a>
+      <div class="nav-icons">
+        <a href="gallery.html" class="gallery-btn">Gallery of Past Custom Cakes</a>
+        <a href="cart.html" class="cart-btn">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="cart-page">
+    <div class="cart-container">
+      <section class="cart-items">
+        <h1>Shopping Cart</h1>
+      </section>
+      <aside class="cart-summary">
+        <h2>Order Summary</h2>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span class="subtotal">GHS0.00</span>
+        </div>
+        <div class="summary-row total">
+          <span>Total</span>
+          <span class="total-amount">GHS0.00</span>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </aside>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
