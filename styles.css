@@ -658,14 +658,32 @@ body {
   }
 }
 
-@media (hover: none), (pointer: coarse) {
+media (hover: none), (pointer: coarse) {
   .quick-add-btn {
-    position: relative;
+    position: static;       /* take it out of absolute stacking */
     transform: none;
+    width: 100%;
     background: var(--accent-color);
     border-radius: 0;
+    padding: 0.65rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+  }
+
+  .product-image {
+    overflow: visible;      /* so the button isn't clipped */
+  }
+
+  .product-card {
+    overflow: hidden;       /* card still clips its own border-radius */
   }
 }
+
 
 .product-info {
   padding: 0.65rem 0.75rem 0.85rem;
